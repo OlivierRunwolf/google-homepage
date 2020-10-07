@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <style>
+body{
+    font-size: small;
+    background: #fff;
+    color: #222;
+    font-family: arial,sans-serif;
+    height: 100%;
+    margin: 0;
+}
+.content{
+    padding-bottom: 35px;
+    margin-top: 89px;
+}
 .main-logo{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 300px;
-    padding-top: 109px
+    padding-top: 109px;
+}
+.search-bar-inner{
+    margin-top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 311px;
+    width: 100%;
 }
 .search-bar{
     background: #fff;
-    display: flex;
     border: 1px solid #dfe1e5;
     box-shadow: none;
     border-radius: 24px;
     z-index: 3;
     height: 44px;
-    margin: 0 auto;
     width: 482px;
 }
 .search-bar:hover{
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
     border-color: rgba(223,225,229,0);
 }
-.content
+
 input:focus {
     outline: none;
 }
@@ -34,13 +50,23 @@ input:focus {
  </head>
  
  <body>
-     <div>
-        <div class="content">
-            <div class="main-logo">
-                <img alt="Google"i d="hplogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-             </div>
-             <input  class="search-bar"maxlength="2048">
-         </div>
-     </div>
+    <div class="search-bar-outter">
+        <div class="search-bar-inner">
+            <form>
+                <input  class="search-bar" maxlength="2048">
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="main-logo">
+            <img alt="Google" height="92" id="hplogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+    </div>
+
+
+    <div id="footer">
+    </div>
+
  </body>
 </html>
