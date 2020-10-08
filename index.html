@@ -45,17 +45,26 @@ input:focus {
     position: absolute;
     bottom: 0;
     font-size: 10pt;
-    height: 105px;
-    width: 100px;
+    width: 100%;
     left: 0;
     right: 0;
 }
 .lower-bar{
     font-size: 15px;
-    margin-left: 30px;
     text-align: left;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    padding-left: 27px;
+    color: #5f6368;
+}
+.canada{
     color: rgba(0,0,0,.54);
-    padding-left: 27px
+    border-bottom: 1px solid #e4e4e4;
+}
+#footer-other-side{
+    float: right;
+    margin-right: 30px;
 }
 </style>
 <html>
@@ -83,10 +92,12 @@ input:focus {
     <div id="footer">
         <div class="both-bars">
             <div class="lower-bar">
-                <span>Canada</span>
+                <div class="canada">
+                    <span>Canada</span>
+                </div>
+                <span>Advertising Buisness How search Works</span>
+                <span id="footer-other-side">Privacy Terms Settings</span>
             </div>
-            <span>Advertising Buisness How search Works</span>
-            <span>Privacy Terms Settings</span>
         </div>
     </div>
 
